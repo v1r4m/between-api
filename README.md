@@ -40,7 +40,7 @@ curl --location --globoff --request GET \
 |relationship_id||your lover's Id. same above.|
 |account_id||I'm not sure what's the great differences between account_id and user_id; but I assume that account_id never changes, whereas user_id changes when you exchange your lover.|
 |session_id||you don't need this in most cases.|
-|expires_at||Unix Time; **This is very short, it is nearly impossible to manually call the api back with token unless you write a script.** Although it's not accurate, I think it is about 1~2 seconds after the initial call.|
+|expires_at||Unix Time; **This is very short, it is nearly impossible to manually call the api back with token unless you write a script.** I think it is about 1~2 seconds after the initial call.|
 |access_before_dormant||?|
 
 ### 2. Get Endpoints
