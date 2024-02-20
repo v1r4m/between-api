@@ -44,3 +44,37 @@ curl --location --globoff --request GET \
 |access_before_dormant||?|
 
 ### 2. Get Endpoints
+* method : `GET`
+* url : /info/endpoints
+```
+curl --location --request GET 'https://api-between.vcnc.co.kr/info/endpoints' \
+--header 'x-between-authentication: yourFancyToken' \
+```
+
+* request header
+
+|header|value|remarks|
+|--|---|--|
+|x-between-authentication|yourFancyAccessToken||
+
+* response example
+```
+{
+	"message":[
+		"between+ssl://msg-between.between.us:5683/?timeout_millis=420000",
+		"between+ssl://msg-between.between.us:443/?timeout_millis=420000"
+	],
+	"websocket":[
+		"wss://ws-between.between.us:443/?timeout_millis=60000"
+	],
+	"push":[
+		"between+ssl://push-between.between.us:5683/?timeout_millis=900000",
+		"between+ssl://push-between.between.us:443/?timeout_millis=900000"
+	]
+}
+```
+|parameter|value|remarks|
+|--|--|--|
+|message|||
+|websocket|||
+|push|||
