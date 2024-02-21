@@ -5,6 +5,25 @@
 * For chatting, you will need to set WebSocket Connection, or execute long-polling.
 * Base URL : https://api-between.vcnc.co.kr
 
+## Usage
+```
+usage: python3 test.py [-h] email password
+
+Process email and password.
+
+positional arguments:
+  email       Email for authentication
+  password    Password for authentication
+
+options:
+  -h, --help  show this help message and exit
+
+example:
+  python3 test.py yourFancyEmail@fancyEmail.com yourFancyPassword
+```
+
+simple.
+
 ### 1. Authentication
 * method : `GET`
 * url : /authentication/getAccessTokenV2
